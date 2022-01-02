@@ -1,10 +1,14 @@
 const express = require('express');
 const connectDB = require('./config/db');
 
+const bookRouter = require('./routes/api/books');
+
 const app = express();
 
 // Connect Database
 connectDB();
+
+app.use('/api/books/', bookRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello world!');
