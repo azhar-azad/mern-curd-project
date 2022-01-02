@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://root:root@untitiled-mern-project.pzhxn.mongodb.net/mern_project_db?retryWrites=true&w=majority"
+}
