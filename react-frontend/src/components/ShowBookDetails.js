@@ -86,22 +86,22 @@ class ShowBookDetails extends Component {
         </div>
 
         return (
-            <div class="ShowBookDetails">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 m-auto">
+            <div className="ShowBookDetails">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-10 m-auto">
                             <br />
                             <br />
-                            <Link to="/" class="btn btn-outline-warning float-left">
+                            <Link to="/" className="btn btn-outline-warning float-left">
                                 Show Book List
                             </Link>
                         </div>
                         <br />
-                        <div class="col-md-8 m-auto">
-                            <h1 class="display-4 text-center">
+                        <div className="col-md-8 m-auto">
+                            <h1 className="display-4 text-center">
                                 Book's Record
                             </h1>
-                            <p class="lead text-center">
+                            <p className="lead text-center">
                                 View Book's Info
                             </p>
                             <hr />
@@ -112,17 +112,17 @@ class ShowBookDetails extends Component {
                         { BookItem }
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <button type="button" class="btn btn-outline-danger btn-lg btn-block"
+                    <div className="row">
+                        <div className="col-md-6">
+                            <button type="button" className="btn btn-outline-danger btn-lg btn-block"
                                 onClick={this.onDeleteClick.bind(this, book._id)}>
                                 Delete Book
                             </button>
                             <br />
                         </div>
 
-                        <div class="col-md-6">
-                            <Link to={`/edit-book/${book._id}`} class="btn btn-outline-info btn-lg btn-block">
+                        <div className="col-md-6">
+                            <Link to={`/edit-book/${book._id}`} className="btn btn-outline-info btn-lg btn-block">
                                 Edit Book
                             </Link>
                             <br />
